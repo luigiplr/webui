@@ -1,19 +1,23 @@
 import React from 'react'
-import {Route, IndexRoute, Redirect} from 'react-router'
+import {
+    Route, IndexRoute, Redirect
+}
+from 'react-router'
 
-import Page from './views/page'
-import HomePage from './pages/home'
-import ConnectionsPage from './pages/connections'
-import FilesPage from './pages/files'
-import ObjectsPage from './pages/objects'
-import BitswapPage from './pages/bitswap'
-import RoutingPage from './pages/routing'
-import ConfigPage from './pages/config'
-import LogPage from './pages/logs'
-import NotFoundPage from './pages/notfound'
+import Page from './views/page';
+import HomePage from './pages/home';
+import ConnectionsPage from './pages/connections';
+import FilesPage from './pages/files';
+import ObjectsPage from './pages/objects';
+import BitswapPage from './pages/bitswap';
+import RoutingPage from './pages/routing';
+import ConfigPage from './pages/config';
+import LogPage from './pages/logs';
+import NotFoundPage from './pages/notfound';
 
-export default (
-  <Route component={Page} path='/'>
+export
+default (
+    <Route component={Page} path='/'>
     <IndexRoute component={HomePage}/>
     <Route path='home' component={HomePage} />
 
